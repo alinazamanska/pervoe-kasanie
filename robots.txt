@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jsz7yw7j4g-del.github.io/pervoe-kasanie/sitemap.xml

@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//I- System//Pervoe Kasanie//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:pervoe-kasanie-20261018@pervoe-kasanie-alina.hn5nfpzmvc.chatgpt.site
+DTSTAMP:20261010T150000Z
+DTSTART:20261018T120000Z
+DTEND:20261018T150000Z
+SUMMARY:Первое касание — Алина Заманская
+DESCRIPTION:Живой разговор и практика. Для за
+ писи и получения деталей участия напиш
+ ите @alinazamanska в Telegram. Сохранение даты в ка
+ лендарь не является регистрацией.
+LOCATION:Онлайн в Zoom
+URL:https://jsz7yw7j4g-del.github.io/pervoe-kasanie/
+END:VEVENT
+END:VCALENDAR

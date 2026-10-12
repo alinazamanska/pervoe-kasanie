@@ -1,0 +1,60 @@
+/* Approved 12 Oct mobile composition. Never stretch the photographic asset. */
+.opening-invitation{background:#081817;color:#c8cfcb;border-bottom:1px solid #f5f1eb14;padding:17px 0}
+.opening-invitation p{font-size:13px;line-height:1.75;max-width:1040px}
+.hero{background:#001313;min-height:850px;padding-bottom:70px}
+.hero-photo{width:auto;height:100%;max-width:none;right:0;top:0;object-fit:contain;object-position:right top;transform:none;aspect-ratio:auto}
+.hero-shade{background:linear-gradient(90deg,#001313 0%,#001313 39%,#00131375 58%,transparent 75%)}
+.hero-content{padding-top:39px}
+.hero-copy{width:650px;max-width:65%}
+.hero-copy>.eyebrow{margin-bottom:24px}
+.eyebrow-line{font-size:9px;letter-spacing:.2em}
+.hero h1{font-size:clamp(64px,6.4vw,100px);line-height:1.02;margin-bottom:29px}
+.hero-audience{font-size:13px;line-height:1.7;color:#d4d8d4;max-width:470px;margin:0}
+.hero-route{font-size:19px;line-height:1.5;max-width:500px;margin-top:17px}
+.hero-intro{font-size:16px;line-height:1.75;max-width:435px;margin-top:21px;color:#e3e5df}
+.hero-host{margin-top:28px}
+.hero-host p{font-size:29px}
+.hero-host span{font-size:12px}
+.hero-details{margin-top:23px;gap:25px}
+.hero-details p{font-size:13px}
+.hero-cta{min-width:330px}
+@media(min-width:1600px){
+ .hero{min-height:960px}.hero-content{padding-top:70px}.hero-copy{width:750px}.hero h1{font-size:106px}
+ .hero-photo{width:auto;height:100%}.hero-shade{background:linear-gradient(90deg,#001313 0%,#001313 48%,#00131366 66%,transparent 83%)}
+}
+@media(min-width:761px) and (max-width:1100px){
+ .hero{min-height:840px}.hero-copy{max-width:73%}.hero h1{font-size:73px}.hero-photo{width:auto;height:100%}
+ .hero-shade{background:linear-gradient(90deg,#001313 0%,#001313bb 34%,transparent 75%)}
+ .hero-intro{max-width:380px}.hero-route{max-width:390px}
+}
+@media(max-width:760px){
+ .opening-invitation{padding:17px 0}.opening-invitation p{font-size:12px;line-height:1.75}
+ .hero{min-height:0;padding-bottom:64px}
+ .hero-photo{width:100%;height:auto;max-width:none;top:0;right:0;object-fit:contain;object-position:right top}
+ .hero-shade{background:linear-gradient(0deg,#001313 0%,#00131300 17%),linear-gradient(90deg,#00131333 0%,transparent 57%)}
+ .nav{height:96px}.hero-content{padding-top:60px}.hero-copy{max-width:none;width:100%}
+ .hero-copy>.eyebrow{font-size:10px;letter-spacing:.2em;margin-bottom:30px}.eyebrow-line{font-size:8px;letter-spacing:.22em;margin-top:7px}
+ .hero h1{font-size:clamp(43px,10.8vw,76px);line-height:1.05;margin-bottom:26px;max-width:100%}
+ .hero-audience{font-size:13px;line-height:1.6;max-width:72%;margin:0}
+ .hero-route{font-size:17px;line-height:1.5;max-width:78%;margin-top:17px}
+ .hero-intro{font-size:14px;line-height:1.7;max-width:68%;margin-top:18px}
+ .hero-host{margin-top:25px}.hero-host:before{margin-bottom:17px}
+ .hero-host p{font-size:26px;line-height:1.15;max-width:100%}.hero-host span{font-size:10px;line-height:1.7;margin-top:7px}
+ .hero-details{margin-top:23px;margin-bottom:23px;gap:12px}.hero-details p{font-size:13px;gap:11px}
+ .hero-cta{width:min(100%,365px);min-width:0;min-height:56px;font-size:13px;padding-inline:23px}
+ .hero-side,.scroll-hint{display:none}
+}
+@media(max-width:500px){
+ .nav{height:90px}.hero-content{padding-top:51px}.hero h1{font-size:11.65vw;line-height:1.05}
+ .hero-photo{width:100%;height:auto}.hero-copy>.eyebrow{font-size:10px;margin-bottom:24px}
+ .hero-audience{font-size:12px;max-width:73%}.hero-route{font-size:16px;max-width:77%}
+ .hero-intro{font-size:14px;line-height:1.65;max-width:68%}
+ .hero-host p{font-size:25px}.hero-host span{font-size:10px}.hero-details p{font-size:12px}
+ .hero{padding-bottom:54px}.hero-cta{width:min(100%,340px)}
+}
+@media(max-width:360px){
+ .opening-invitation p{font-size:12px}.hero-content{padding-top:40px}
+ .hero-copy>.eyebrow{font-size:9px}.eyebrow-line{font-size:7px}
+ .hero-audience{font-size:11px}.hero-route{font-size:15px}.hero-intro{font-size:13px}
+ .hero-host p{font-size:22px}.hero-host span{font-size:9px}.hero-details p{font-size:11px}
+}

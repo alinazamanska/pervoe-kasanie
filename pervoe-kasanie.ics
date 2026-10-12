@@ -5,15 +5,17 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:pervoe-kasanie-20261018@pervoe-kasanie-alina.hn5nfpzmvc.chatgpt.site
-DTSTAMP:20261010T150000Z
-DTSTART:20261018T120000Z
-DTEND:20261018T150000Z
+DTSTAMP:20261012T143000Z
+SEQUENCE:1
+DTSTART:20261018T100000Z
+DTEND:20261018T130000Z
 SUMMARY:Первое касание — Алина Заманская
-DESCRIPTION:Живой разговор и практика. Для за
- писи и получения деталей участия напиш
- ите @alinazamanska в Telegram. Сохранение даты в ка
- лендарь не является регистрацией.
+DESCRIPTION:Живой разговор и практика. Для зап
+ иси и получения деталей участия напишит
+ е @alinazamanska в Telegram. Сохранение даты в кален
+ дарь не является регистрацией.
 LOCATION:Онлайн в Zoom
-URL:https://jsz7yw7j4g-del.github.io/pervoe-kasanie/
+URL:https://alinazamanska.github.io/pervoe-kasanie/
 END:VEVENT
 END:VCALENDAR
+

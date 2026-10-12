@@ -61,10 +61,10 @@
   try {
     const zone = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const format = new Intl.DateTimeFormat('ru-RU', { hour: '2-digit', minute: '2-digit', timeZone: zone });
-    const start = format.format(new Date('2026-10-18T12:00:00Z'));
-    const end = format.format(new Date('2026-10-18T15:00:00Z'));
+    const start = format.format(new Date('2026-10-18T10:00:00Z'));
+    const end = format.format(new Date('2026-10-18T13:00:00Z'));
     document.querySelectorAll('[data-local-time]').forEach(node => { node.textContent = `В часовом поясе вашего устройства (${zone}): ${start}–${end}.`; });
-  } catch (_) { /* The published London time remains available without Intl. */ }
+  } catch (_) { /* The published Brussels time remains available without Intl. */ }
 
   const sticky = document.querySelector('.mobile-join');
   let heroVisible = true, registrationVisible = false;
@@ -81,3 +81,4 @@
     observer.observe(document.querySelector('#register'));
   }
 })();
+

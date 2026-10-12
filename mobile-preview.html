@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Мобильный просмотр — Первое касание</title>
+<style>*{box-sizing:border-box}body{margin:0;padding:24px;background:#e8e6e1;color:#20312e;font:14px/1.5 Arial,sans-serif}header{max-width:650px;margin:0 auto 20px;text-align:center}h1{font:24px Georgia,serif;margin:0 0 12px}nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}button,a{font:inherit;padding:8px 13px;border:1px solid #9ba49e;border-radius:18px;background:transparent;color:inherit;cursor:pointer;text-decoration:none}button[aria-pressed=true]{background:#20312e;color:#fff}iframe{display:block;margin:auto;border:0;width:390px;height:1100px;max-width:none;box-shadow:0 8px 30px #0002;background:#001313}footer{text-align:center;margin-top:18px;color:#67736c;font-size:12px}</style></head>
+<body><header><h1>Первое касание · Мобильная версия</h1><nav aria-label="Ширина экрана"><button data-width="320" aria-pressed="false">320 px</button><button data-width="390" aria-pressed="true">390 px</button><button data-width="430" aria-pressed="false">430 px</button><a href="./">Открыть сайт ↗</a></nav></header>
+<iframe id="mobile-site" title="Мобильная версия сайта" src="./index.html"></iframe><footer>Показана работающая страница с реальными текстом и кнопками.</footer>
+<script>
+const frame=document.querySelector('iframe');
+function fit(){const doc=frame.contentDocument;if(!doc)return;const hero=doc.querySelector('.hero'),intro=doc.querySelector('.opening-invitation');if(hero)frame.style.height=Math.ceil(hero.offsetHeight+(intro?intro.offsetHeight:0))+'px';}
+frame.addEventListener('load',()=>{fit();frame.contentDocument.fonts.ready.then(fit);new ResizeObserver(fit).observe(frame.contentDocument.querySelector('.hero'));});
+document.querySelectorAll('[data-width]').forEach(button=>button.addEventListener('click',()=>{frame.style.width=button.dataset.width+'px';document.querySelectorAll('[data-width]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));requestAnimationFrame(fit);}));
+</script></body></html>
